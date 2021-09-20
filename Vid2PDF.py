@@ -41,27 +41,11 @@ import ocrmypdf
 
 
 def main():
-    test = 1
-    if test == 0:
-        vid = \
-            'C:/Users/Lenovo/Desktop/Rutgers Fall 2020/Sustainable Energy/Video2PPT/SE-9-22.mp4'
-        destination = \
-            'C:/Users/Lenovo/Desktop/Rutgers Fall 2020/Sustainable Energy/Video2PPT/FrameCaptures/Output_Lec8_9-29'
-        '''    
-        pdfPath = choosePDF()
-        print(pdfPath)
-        ocrmypdf.ocr(pdfPath, 'output_OCR.pdf', deskew=True)
-        '''
-        fileName = vid[-15:]
-        print(fileName)
-        
-        
-    else:
-        MboxOut = Mbox('Directions',
-                       'Select video, then select destination folder',
-                       0)
-        vid = chooseVid()
-        destination = chooseDestination()
+	MboxOut = Mbox('Directions',
+		       'Select video, then select destination folder',
+		       0)
+	vid = chooseVid()
+	destination = chooseDestination()
     
     r = [200, 1050, 400, 1500]
     t = (0.85 * 1)
